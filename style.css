@@ -11,19 +11,19 @@ body > header{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
-header .container {
+header .container { /* Alinha os containers das sections no centro com espaçamento igualitario entre eles*/
     display: flex;
     justify-content: center;
     justify-content: space-between;
 }
 
-header .container h1{
+header .container h1{ /* define dimensões do titulo da página e estilo*/
     font-size: 30px;
     text-decoration:dotted;
     margin-left: 10px;
 }
 
-header li{
+header li{ /*estilo de lista nav*/
     font-family: Arial, Helvetica, sans-serif;
     display: inline;
 }
@@ -35,7 +35,7 @@ header li a{
     background-color: #332211;
 }
 
-.container{
+.container{ /*defino espaçamento interno para deixar itens não-colados*/
     padding: 10px;
     margin:0 auto;
 }
@@ -50,7 +50,7 @@ header li a{
     margin-bottom: 5px;
 }
 
-.articles article a{
+.articles article a{ /*estilizo os links como buttons atrativos e interativos*/
     text-decoration: none;
     background-color: #d18e1b;
     color: white;
@@ -61,22 +61,22 @@ header li a{
     justify-content: center;
 }
 
-.articles article a:hover{
+.articles article a:hover{ /*muda o estado do botao ao ser passado com o mouse por cima*/
     text-decoration: underline;
 }
 
 
-.articles{
+.articles{ /* organiza os elementos com flex, espaçamento interno. Caso sejam inseridas novos artigos, esperasse que com o wrap "eles quebrem a linha"*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between
 }
 
-.articles article{
+.articles article{ /*defino que o tamanho maximo que cada article ocupa é 30% do espaço total do container*/
     width: 30%;
 } 
 
-.articles article img{
+.articles article img{ /*a imagem tomara 100% do espaço disponivel para ela no article*/ 
     width: 100%;
 }
 
@@ -93,7 +93,7 @@ h2{
     margin-bottom: 5px;
 }
 
-footer {
+footer { /*estilização do footer*/
     background-color: #281b0d;
     color: aliceblue;
     padding: 20px;
@@ -102,7 +102,7 @@ footer {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.topo{
+.topo{ /*estilização e criação de button para ir ao topo da página*/
     text-decoration: none;
     position: fixed;
     bottom: 0;
